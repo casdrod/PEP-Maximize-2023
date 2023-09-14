@@ -854,6 +854,7 @@ header {
   padding: 5px 10px;
   z-index: 100;
   background-color: #fff;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16));
 }
 header #nav a i {
   font-size: 20px;
@@ -1015,7 +1016,6 @@ header #nav #mobile-btns .phone span {
 }
 
 .fix-nav header {
-  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
   position: fixed;
   width: 100%;
   left: 0;
@@ -1153,7 +1153,7 @@ p.big {
   flex: 0 1 815px;
 }
 .smile .content .call article p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 50px;
   padding: 10px;
   color: #000;
@@ -1289,7 +1289,7 @@ p.big {
 }
 .smile .use-it-very-bottom-text .big {
   color: #fff !important;
-  max-width: 54%;
+  max-width: 1100px;
   margin: auto;
   margin-top: 50px;
   font-size: 36px;
@@ -1712,7 +1712,8 @@ hr {
     padding: 50px 20px;
   }
   #banner article h1 {
-    font-size: 75px;
+    font-size: 68px;
+    text-align: center;
   }
   #banner article h1 big {
     font-size: 130px;
@@ -1740,6 +1741,8 @@ hr {
   }
   .smile .use-it-very-bottom-text .big {
     max-width: none;
+    line-height: normal;
+    font-size: 32px;
   }
   #banner-counter #countdown #count {
     flex-wrap: wrap;
@@ -1749,11 +1752,12 @@ hr {
     max-width: 220px;
     margin: 5px auto;
   }
-  #nav {
+  header #nav {
     justify-content: space-around;
+    padding: 0;
   }
-  #nav .logo {
-    margin: 0;
+  header #nav .logo {
+    margin: 15px auto;
   }
   #nav .header-buttons {
     margin: 0;
@@ -1822,9 +1826,6 @@ hr {
 @media (max-width: 890px) {
   #nav .header-buttons .btn, #nav .header-buttons .btn-alt {
     width: 180px;
-  }
-  #nav .logo {
-    max-width: 350px;
   }
 }
 @media (max-width: 768px) {
@@ -1945,7 +1946,7 @@ hr {
   }
   #nav .logo img {
     max-width: 300px;
-    margin: 0 auto 15px;
+    margin: 0 auto;
   }
   h2 {
     margin-top: 20px;
@@ -2007,9 +2008,6 @@ hr {
     font-size: 20px;
     padding-left: 30px;
   }
-  #nav {
-    gap: 10px;
-  }
 }
 @media (max-width: 430px) {
   .split article .btn {
@@ -2063,4 +2061,4 @@ hr {
   .double-list .flex-ed .option-list .list-body .list-bkg {
     display: none;
   }
-}/*# sourceMappingURL=2023-pep-use-it-styles.css.map */
+}/*# sourceMappingURL=2023-pep-maximize-styles.css.map */

@@ -96,7 +96,7 @@ main ul{list-style:none;padding:0;margin:10px auto;text-align:left;display:table
     &:hover{background-color:$text;color:#fff}
 }
 
-header{position:relative;padding:5px 10px;z-index:100;background-color: #fff;
+header{position:relative;padding:5px 10px;z-index:100;background-color: #fff;filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .16));
     #nav {
         a {
             i {font-size: 20px; color: #fff;
@@ -166,7 +166,7 @@ header{position:relative;padding:5px 10px;z-index:100;background-color: #fff;
         }
     }
 }
-.fix-nav header{filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));position:fixed;width:100%;left:0;top:0;right:0;animation-duration:.8s;animation-fill-mode:both;animation-name:slideIn;z-index:100000;box-shadow:0 3px 7px rgba(0,0,0,0.35);
+.fix-nav header{position:fixed;width:100%;left:0;top:0;right:0;animation-duration:.8s;animation-fill-mode:both;animation-name:slideIn;z-index:100000;box-shadow:0 3px 7px rgba(0,0,0,0.35);
     .logo {max-height: 120px; margin-bottom: 0; img {max-height: 120px; margin-bottom: 0;}}
 }
 
@@ -208,7 +208,7 @@ p {
     .content{ max-width: 1300px; margin: auto; background-color: #f0f0f0; 
         .call{padding: 40px 10px; display: flex; align-items: center; justify-content: space-around; background-color: #fff;
             article {flex: 0 1 815px;
-                p{font-weight: 400; font-size: 50px; padding: 10px; color: $text; font-family: $font; text-align: left; letter-spacing: -.02em;line-height: 60px;}
+                p{font-weight: 500; font-size: 50px; padding: 10px; color: $text; font-family: $font; text-align: left; letter-spacing: -.02em;line-height: 60px;}
                 a{color: $primary;
                     &:hover {color: $text;}
                 }
@@ -243,7 +243,7 @@ p {
             .smalltext { margin-top: 30px; color: $text; font-size: 20px; font-weight: 700; font-style: normal; letter-spacing: normal; line-height: 1; }
         }
     }
-    .use-it-very-bottom-text .big {color: #fff !important; max-width: 54%;margin: auto;margin-top: 50px;font-size: 36px;font-weight: 400;font-family: $font;}
+    .use-it-very-bottom-text .big {color: #fff !important; max-width: 1100px;margin: auto;margin-top: 50px;font-size: 36px;font-weight: 400;font-family: $font;}
 }
 
 footer :is(input, textarea) {background-color: #f0f0f0 !important;}
@@ -376,7 +376,7 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
     header #nav .phone {display:none;}
     #banner {max-height: none;
         article {padding: 50px 20px;
-            h1 {font-size: 75px;
+            h1 {font-size: 68px;text-align:center;
                 big {font-size: 130px;}
             }
             p {font-size: 29px;}
@@ -392,7 +392,7 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
             }
         }
         .use-it-very-bottom-text {
-            .big {max-width: none;}
+            .big {max-width: none;line-height: normal;font-size: 32px;}
         }
     }
     #banner-counter {
@@ -402,8 +402,8 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
             }
         }
     }
-    #nav {justify-content: space-around;}
-    #nav .logo{margin:0}
+    header #nav {justify-content: space-around;padding: 0;}
+    header #nav .logo{margin:15px auto}
     #nav .header-buttons{margin:0;order:0;flex:0 1 220px}
     header #nav a.btn {display:none;}
     .phone{font-size:30px;margin:0}
@@ -425,7 +425,6 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
 
 @media (max-width: 890px) {
     #nav .header-buttons .btn,#nav .header-buttons .btn-alt{width:180px}
-    #nav .logo{max-width:350px}
 }
 @media (max-width: 768px) {
     .factors {
@@ -469,7 +468,7 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
 
 @media (max-width: 590px) {
     #nav {justify-content: center;}
-    #nav .logo img {max-width: 300px;margin: 0 auto 15px;}
+    #nav .logo img {max-width: 300px;margin: 0 auto;}
     h2{margin-top:20px;font-size:50px;}
     .factors h2 {font-size: 42px;}
     #services-custom{padding:0}
@@ -491,7 +490,6 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
 @media (max-width: 500px) {
     .use-it-top-image div figcaption {font-size: 14px;}
     .double-list .flex-ed .option-list .list-body ul li {margin: 10px auto; font-size: 20px; padding-left: 30px;}
-    #nav {gap: 10px;}
 }
 
 @media (max-width: 430px) {
