@@ -30,21 +30,21 @@
 }
 
 
-$primary: #C8A969;
-$secondary:#303133;
-$tertiary: #283933;
-$font: 'Heebo', sans-serif;
-$font2: 'Heebo', sans-serif;
+$primary: #B5AB9F;
+$secondary:#233947;
+$tertiary: #335167;
+$font: 'Inter', sans-serif;
+$font2: 'Inter', sans-serif;
 $text: #000;
 $icon-bkg: rgba(15, 15, 76,.05);
 
 
 /* ------------- Fixed Tabs -------------- */
 #fixed-tabs{position:fixed;bottom:0;right:0;width:100%;text-align:center;line-height:1;z-index:110000;display:flex}
-#fixed-tabs a{font-size:13px;color:$text;font-weight:700;text-transform:uppercase;padding:14px 0;flex: 0 1 25%}
-#fixed-tabs .map {background-color:$primary;color: #000;}
-#fixed-tabs .call {background-color:$secondary;color: #fff;}
-#fixed-tabs .ra {flex: 0 1 50%; background-color: $primary;color: #000;}
+#fixed-tabs a{font-size:13px;color:#fff;font-weight:700;text-transform:uppercase;padding:14px 0;flex: 0 1 25%}
+#fixed-tabs .map {background-color:$primary;}
+#fixed-tabs .call {background-color:$secondary;}
+#fixed-tabs .ra {flex: 0 1 50%; background-color: $primary;}
 @media (min-width: 1031px) {
 #fixed-tabs{display:none}
 }
@@ -146,7 +146,7 @@ header{position:relative;padding:20px 10px;z-index:100;background-color: #fff;fi
 					width: 100%;color: #000;text-align:center;
 				}
 			  }
-			.phone {background-color: $primary;font-size: 22px;line-height: 1.3;color: #fff;
+			.phone {background-color: $primary;font-size: 20px;line-height: 1.3;color: #fff;
 				span {text-transform: uppercase;font-size: 18px;font-weight: 700;letter-spacing: 1px;color: #fff;}
 			}
 		}
@@ -178,7 +178,7 @@ p {
 
 /*Use it or Lose it Page*/
 #banner {display: flex;flex-wrap: wrap;background-color: $tertiary;max-height: 900px;overflow:hidden;border-bottom: 10px solid $primary;position: relative;
-    &:before {content: '';right:-25%;position: absolute;background-repeat: no-repeat;bottom: 5%;background-image: url(assets/images/pep-maximize-banner-accent.png);width:100%;height: 475px;}
+    &:before {content: '';right:-4%;position: absolute;background-repeat: no-repeat;bottom: -26%;background-image: url(assets/images/pep-maximize-banner-accent.png);width:100%;height: 475px;}
     > * {max-height: 900px;position: relative;}
     figure {flex: 0 1 50%;
         img {width: 100%;}
@@ -189,13 +189,13 @@ p {
         align-items: center;
         justify-content:center;
         align-self: center;
-        #top-text {text-align:left;line-height: 1;font-size: 45px;color: #fff;font-weight: 500; margin: 10px 50px;}
+        #top-text {text-align:left;line-height: normal;font-size: 45px;color: #fff;font-weight: 500; margin: 10px 50px;}
         h1 {color: #fff;margin: 20px 0;
             text-shadow: 5px 5px 5px black; font: 800 75px/1 $font;text-transform:uppercase;text-align:left;
              big {color: $primary;width: 100%;display:block;font-size: 175px;}
         }
         h2 {font-size: 45px; color: #fff;font-family: $font;font-weight:600}
-        p {color: #fff;font-size: 26px;line-height: 32px;font-family: $font;}
+        p {color: #fff;font-size: 24px;line-height: 32px;font-family: $font;}
     }
 }
 
@@ -207,8 +207,8 @@ p {
     article p { &.big{font-weight: normal; font-size: 26px; text-align: center; color: #1a1a1a;}}
     .content{ max-width: 1300px; margin: auto; background-color: #f0f0f0; 
         .call{padding: 40px 10px; display: flex; align-items: center; justify-content: space-around; background-color: #fff;
-            article {flex: 0 1 815px;
-                p{font-weight: 500; font-size: 50px; padding: 10px; color: $text; font-family: $font; text-align: left; letter-spacing: -.02em;line-height: 60px;}
+            article {flex: 1 1 815px;
+                p{font-weight: 500; font-size: 50px; padding: 10px; color: $text; font-family: $font; text-align: left; line-height: 70px;}
                 a{color: $primary;
                     &:hover {color: $secondary}
                 }
@@ -314,8 +314,8 @@ figcaption{text-align:center; background: #000; text-transform: uppercase; paddi
 
 
 /* ------------- Copy -------------- */
-.copy {margin-top:20px;padding:30px 10px 50px; background-color:#fff;margin:auto; font:400 16px/1.4 $font; color:#1a1a1a;; 
-   a, p {font:400 16px/1.4 $font; color:#fff; }
+.copy {margin-top:20px;padding:30px 10px 50px; background-color:#fff;margin:auto; font:400 18px/1.4 $font; color:#1a1a1a;; 
+   a, p {font:400 18px/1.4 $font; color:#fff; }
    a {color: $primary;}
     p {margin: 20px auto; max-width: 1090px;}
     a:hover{color:$secondary;}
@@ -384,8 +384,8 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
     header #nav .phone {display:none;}
     #banner {max-height: none;
         article {padding: 50px 20px;
-            h1 {font-size: 68px;text-align:center;
-                big {font-size: 130px;}
+            h1 {font-size: 63px;text-align:center;
+                big {font-size: 114px;}
             }
             p {font-size: 29px;}
             #top-text {margin: auto;text-align:center;font-size: 43px;}
@@ -426,6 +426,7 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
     .double-list .flex-ed {flex-wrap: wrap; justify-content: center;
         .option-list {margin: 40px auto;}
     }
+    footer article .phone {font-size: 36px;}
     footer .flex-ed{flex-wrap:wrap;max-width:700px;margin:auto}
     footer .split {justify-content: center;margin-bottom: 0;}
     footer .split article {flex-basis: auto;flex: 1;}
@@ -480,7 +481,7 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
     h2{margin-top:20px;font-size:50px;}
     .factors h2 {font-size: 42px;}
     #services-custom{padding:0}
-    .smile .content .call article p {font-size: 40px;}
+    .smile .content .call article p {font-size: 36px;}
     .upper-form form{flex-direction:column}
     main ul li,.services ul li{text-align:center}
     .services ul{max-width:270px;margin:0 auto}
@@ -515,8 +516,33 @@ hr{border-bottom:1px solid rgba(151,151,151,0.74);box-shadow:5px 1px 1px rgba(14
 }
 
 @media (max-width: 370px) {
-    #nav{display:block}
-    #nav .btn{margin:10px auto}
+    header {
+        #nav {display:block;
+            .logo {margin: 0; padding: 20px;
+                img {max-width: -moz-available;}
+            }
+            #mobile-btns {
+                .phone {font-size: 16px;}
+                .btn {font-size: 13px;}
+            }
+        }
+    }
+    #banner {
+        article {
+            h1 {font-size: 50px;
+                big {font-size: 96px;;}
+            }
+            #top-text {font-size: 40px;}
+        }
+    }
+    footer .form .simple input, footer .form .simple textarea, footer .form .simple .btn {width: 90%!important;}
+    .smile .content .call {
+        figure {
+            figcaption {font-size: 14px; padding: 5px 0;}
+        }
+        article p {font-size: 30px;}
+    }
     .use-it-top-image div figcaption span {padding: 10px 20px;}
     .double-list .flex-ed .option-list .list-body .list-bkg {display: none;}
+    footer article .phone {font-size: 32px;}
 }
